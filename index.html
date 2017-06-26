@@ -1,148 +1,129 @@
-
 <!doctype html>
-
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-	<title>Hypsum - The HackerYou Themed Text Generator </title>
-	<!-- Designed & Coded by Hamsa Ganesh & Andrew Dyke Oct. 2015 -->
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-	<!-- Device ViewPort for responsive layout -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-
-	<!-- Google Font -->
-	<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
-
-	<!-- Hover Effecs Stylesheet -->
-	<link rel="stylesheet" href="assets/styles/hover-min.css" media="all">
-
-	<!-- Hypsum CSS -->
-	<link rel="stylesheet" href="assets/styles/styles.css">
-
-	<!-- Favicon -->
-	<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon.ico/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon.ico/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon.ico/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/favicon.ico/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon.ico/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon.ico/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon.ico/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="assets/favicon.ico/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.ico/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon.ico/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.ico/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon.ico/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.ico/favicon-16x16.png">
-	<link rel="manifest" href="assets/favicon.ico/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="assets/favicon.ico/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-
+  <meta charset="UTF-8">
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <title>Hypsum - The HackerYou Themed Text Generator</title>
+  <!-- Designed & Coded by Hamsa Ganesh & Andrew Dyke Oct. 2015 -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- Device ViewPort for responsive layout -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <!-- Google Font -->
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <!-- Hover Effecs Stylesheet -->
+  <link rel="stylesheet" href="assets/styles/hover-min.css" media="all">
+  <!-- Hypsum CSS -->
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon.ico/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon.ico/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon.ico/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon.ico/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon.ico/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon.ico/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon.ico/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon.ico/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.ico/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon.ico/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon.ico/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.ico/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon.ico/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/favicon.ico/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-
-
-<!-- Facebook Like Button Scripts -->
-<script>
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}
-(document, 'script', 'facebook-jssdk'));
-</script>
-<!-- End Facebook Button Scripts-->
-
-<!--  Twitter Button Scripts-->
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-</script>
-<!-- End Twitter Button Scripts-->
-	
-<!-- Just a Div to give us a line at the top of the page -->
-<div class="pageTopBorder"></div>
-
-<main>
-	<div class="wrapper">
-
-		<header>
-			<h1 id= "fittexted">Hypsum</h1>
-			<h2>The <a href="http://hackeryou.com">HackerYou</a> themed placeholder text generator!</h2>
-			<hr> <!-- horizontal divider -->
-		</header><!-- End of Header -->
-
-
-		<form id="loremForm">
-			<section class="submission">
-				<div class="question">
-						<h3>How long would you like your paragraph to be?</h3>
-				</div><!-- End of question -->
-				<section class="radioList">
-					<input type="radio" name="loremRadio" value="30" id="radio1" class="customRadio"/>
-					<label for="radio1" class="radioLabel">Short</label>
-
-					<input type="radio" name="loremRadio" value="60" id="radio2" class="customRadio" />
-					<label for="radio2" class="radioLabel">Medium</label>
-
-					<input type="radio" name="loremRadio" value="100" id="radio3" class="customRadio"/>
-					<label for="radio3" class="radioLabel">Long</label>
-				</section>
-			</section> <!-- End form submission -->
-
-			<button class="btn hvr-grow" type="submit" name="loremSubmit">Get me some Hypsum!</button>
-		</form>
-
-		<section class="hypsumText" id="scrollHere">
-		</section>
-
-		<form>
-			<button class="btn clipCopy hvr-grow" data-clipboard-target=".yourPara">Copy text</button>
-		</form>
-		
-		<div id="center">
-			<div id="fb-root"></div>
-
-			<!-- Facebook Like Button -->
-			<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="100px" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
-			<!-- End Facebook Like Button -->
-
-			<!-- Twitter Share Button -->
-			<a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="HackerYou ipsum by @Andrewdyke_ & @Hamganesh!">Tweet</a>
-
-			<!-- Copyright -->
-			<p class="copyright">Copyright 2015 <a href="http://www.hamsaganesh.design">Hamsa Ganesh</a> & <a href="http://www.andrewdyke.me">Andrew Dyke</a></p>
-		</div>
-
-
-	</div> <!-- /wrapper -->
-</main>
-
-
-<!-- JQuery -->
-<script src="assets/scripts/jquery-1.11.3.min.js"></script>
-<!-- Copy to Clipboard -->
-<script src="assets/scripts/clipboard.min.js"></script>
-<!-- Fittext JS -->
-<script src="assets/scripts/jquery.fittext.js"></script>
-<!-- Custom JS -->
-<script src="assets/scripts/scripts.js"></script>
-
-<!--    CREDITS
-   ========================================================================== 
-
+  <!-- Facebook Like Button Scripts -->
+  <script>
+  (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }
+    (document, 'script', 'facebook-jssdk'));
+  </script>
+  <!-- End Facebook Button Scripts-->
+  <!--  Twitter Button Scripts-->
+  <script>
+  ! function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id = id;
+      js.src = p + '://platform.twitter.com/widgets.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }
+  }(document, 'script', 'twitter-wjs');
+  </script>
+  <!-- End Twitter Button Scripts-->
+  <!-- Just a Div to give us a line at the top of the page -->
+  <div class="pageTopBorder"></div>
+  <main>
+    <div class="wrapper">
+      <header>
+        <h1 id="fittexted">Hypsum</h1>
+        <h2>The
+          <a href="http://hackeryou.com">HackerYou</a> themed placeholder text generator!</h2>
+        <hr>
+        <!-- horizontal divider -->
+      </header>
+      <!-- End of Header -->
+      <form id="loremForm">
+        <section class="submission">
+          <div class="question">
+            <h3>How long would you like your paragraph to be?</h3>
+          </div>
+          <!-- End of question -->
+          <section class="radioList">
+            <input type="radio" name="loremRadio" value="30" id="radio1" class="customRadio" />
+            <label for="radio1" class="radioLabel">Short</label>
+            <input type="radio" name="loremRadio" value="60" id="radio2" class="customRadio" />
+            <label for="radio2" class="radioLabel">Medium</label>
+            <input type="radio" name="loremRadio" value="100" id="radio3" class="customRadio" />
+            <label for="radio3" class="radioLabel">Long</label>
+          </section>
+        </section>
+        <!-- End form submission -->
+        <button class="btn hvr-grow" type="submit" name="loremSubmit">Get me some Hypsum!</button>
+      </form>
+      <section class="hypsumText" id="scrollHere">
+      </section>
+      <form>
+        <button class="btn clipCopy hvr-grow" data-clipboard-target=".yourPara">Copy text</button>
+      </form>
+      <div id="center">
+        <div id="fb-root"></div>
+        <!-- Facebook Like Button -->
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="100px" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+        <!-- End Facebook Like Button -->
+        <!-- Twitter Share Button -->
+        <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="HackerYou ipsum by @Andrewdyke_ & @Hamganesh!">Tweet</a>
+        <!-- Copyright -->
+        <p class="copyright">Copyright 2015 <a href="http://www.hamsaganesh.design">Hamsa Ganesh</a> & <a href="http://www.andrewdyke.me">Andrew Dyke</a></p>
+      </div>
+    </div>
+    <!-- /wrapper -->
+  </main>
+  <!-- JQuery -->
+  <script src="assets/scripts/jquery-1.11.3.min.js"></script>
+  <!-- Copy to Clipboard -->
+  <script src="assets/scripts/clipboard.min.js"></script>
+  <!-- Fittext JS -->
+  <script src="assets/scripts/jquery.fittext.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/scripts/scripts.js"></script>
+<!--  CREDITS  =============================================================== 
 1. Radio buttons customised using the form module from Materialise.css
 2. In the fear of being too specific: The world wide web
 3. Colors and look inspired by the material theme in Sublime text
 4. Facebook like and twitter modules borrowed from the repective asset pages
 5. Inconsolata font, by Raph Levien. Available on Google fonts -->
-	
 </body>
+
 </html>
-
-
